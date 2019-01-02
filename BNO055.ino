@@ -36,6 +36,7 @@
     *   | Vin        |
     *   | 3Vo    PS0 | <-- This side facing up
     *   | GND    PS1 |
+    *   | SDA    IN1 | <-- The positive rotations follow the right hand rule and all the axis are aligned to how you would expect in a 3d coordinate plane
     *   | SCL    ADW |
     *   | DST        |
     *   |            |
@@ -44,6 +45,8 @@
     *        back
     * 
     */
+bool zero = true;
+bool calibrate = true;
 int zeroTime = 50;
 
 /* Set the delay between fresh samples */
